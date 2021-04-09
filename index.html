@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jebakan Pinjaman Online</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="judul">
+        <h1>Bahaya pinjaman online!</h1>
+        <h3>Mungkin selama ini anda tergiur dengan tawaran pinjaman yang bisa didapatkan dengan seketika melalui apps! Akan tetapi banyak detail yang di sembunyikan oleh pihak peminjam yang sengaja di sembunyikan agar kalian terjerumus! mau tau apa saja?</h3>    
+        <h3 id="underscore">Mari isi detail dibawah ini:</h3>
+    </section>
+    <section class="parameter">
+        <form action="#">
+            <div class="slidecontainer">
+                <p>Berapa yang kamu mau pinjam?</p>
+                <h1 id="displayPinjaman">5 Juta</h1>
+                <input type="range" min="1" max="100" value="5" class="slider" id="borrow" list="tickmarks" step="1">
+            </div>
+            <div class="slidecontainer">
+                <p>Berapa lama kamu akan membayar?</p>
+                <h1 id="displayLama">1 Bulan</h1>
+                <input type="range" min="1" max="12" value="1" class="slider" id="lama">
+            </div>
+            <div class="hitung">
+                <button onclick="cicilanPerBulan()">Hitung Cicilan!</button>
+            </div>
+        </form>
+    </section>
+    <section class="hasil">
+        <!-- <h1>Cicilan anda per bulan adalah 1 juta</h1> -->
+    </section>
+    <section class="surprise">
+
+    </section>
+    <section class="footer">
+
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
